@@ -127,9 +127,11 @@ lr_scheduler_args:
 max_batch_frames: 80000
 max_batch_size: 48
 max_updates: 160000
+max_epochs: 1000
 
 num_valid_plots: 10
-val_check_interval: 2000
+val_check_interval: 0
+check_val_every_n_epoch: 2
 num_ckpt_keep: 5
 permanent_ckpt_start: 80000
 permanent_ckpt_interval: 10000
