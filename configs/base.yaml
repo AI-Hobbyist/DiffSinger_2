@@ -64,8 +64,8 @@ pe: parselmouth
 pe_ckpt: 'checkpoints/rmvpe/model.pt'
 hnsep: vr
 hnsep_ckpt: 'checkpoints/vr/model.pt'
-f0_min: 65
-f0_max: 1100
+f0_min: 52
+f0_max: 2600
 num_valid_plots: 10
 
 ###########
