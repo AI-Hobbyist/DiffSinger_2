@@ -23,6 +23,7 @@ def get_mel_torch(
     with torch.no_grad():
         wav_torch = torch.from_numpy(waveform).to(device)
         mel_torch = stft.get_mel(wav_torch.unsqueeze(0), keyshift=keyshift, speed=speed).squeeze(0).T
+        torch.cuda.empty_cache()
         return mel_torch.cpu().numpy()
 
 
